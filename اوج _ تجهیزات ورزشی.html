@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>اوج | تجهیزات ورزشی</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F1F5EE;--ink:#14261D;--mut:#5B6B62;--card:#fff;--hero:#D5E8D8;--acc:#F2643A;--sun:#F7D774;--line:#D9E2D6;--soft:#E4EFE5;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101A15;--ink:#EAF2EC;--mut:#9DB0A4;--card:#18271F;--hero:#1D3326;--line:#2A3E32;--soft:#1D3326}}
+:root[data-theme="dark"]{--bg:#101A15;--ink:#EAF2EC;--mut:#9DB0A4;--card:#18271F;--hero:#1D3326;--line:#2A3E32;--soft:#1D3326}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;font-family:'Vazirmatn',system-ui,Tahoma,sans-serif;background:var(--bg);color:var(--ink);line-height:1.9;overflow-x:hidden}
+a{color:inherit;text-decoration:none}button,input{font-family:inherit}button{cursor:pointer}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.w{max-width:1200px;margin:0 auto;padding:0 24px}
+header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;padding-block:20px}
+.logo{display:flex;align-items:center;gap:12px;font-size:26px;font-weight:900}
+.logo b{width:44px;height:44px;border-radius:50%;background:var(--acc);display:grid;place-items:center}
+nav{display:flex;gap:0 28px;flex-wrap:wrap}
+nav a{min-height:44px;display:inline-flex;align-items:center;font-size:15px;font-weight:500;color:var(--mut);transition:color .2s}
+nav a:hover{color:var(--acc)}
+.pill{min-height:48px;padding:0 28px;border-radius:999px;border:0;display:inline-flex;align-items:center;gap:10px;font-size:16px;font-weight:700;background:var(--ink);color:var(--bg);transition:transform .2s}
+.pill:hover{transform:translateY(-2px)}
+.pill.a{background:var(--acc);color:#fff;min-height:56px;padding:0 34px;font-size:17px}
+.pill.o{background:transparent;border:2px solid var(--ink);color:var(--ink);min-height:56px;padding:0 30px;font-size:17px}
+.hero{background:var(--hero);border-radius:48px;padding:clamp(28px,5vw,72px);display:flex;flex-wrap:wrap;align-items:center;gap:40px;margin-top:8px}
+.hero .t{flex:1 1 440px;display:flex;flex-direction:column;align-items:flex-start;gap:24px;min-width:0}
+.badge{display:inline-flex;align-items:center;gap:8px;background:var(--card);border-radius:999px;padding:6px 18px;font-size:14px;font-weight:700}
+h1{margin:0;font-size:clamp(38px,6vw,76px);line-height:1.3;font-weight:900}
+h1 mark{background:linear-gradient(transparent 62%,var(--sun) 62%);color:inherit}
+.hero p{margin:0;font-size:18px;color:var(--mut);max-width:500px}
+.row{display:flex;flex-wrap:wrap;gap:14px}
+.trust{display:flex;flex-wrap:wrap;gap:10px 28px;font-size:15px;font-weight:500}
+.trust span{display:inline-flex;align-items:center;gap:8px}
+.art{flex:1 1 380px;max-width:520px;margin:0 auto;position:relative;aspect-ratio:1}
+.art svg{width:100%;height:100%;display:block}
+.float{position:absolute;bottom:6%;right:2%;background:var(--card);border-radius:24px;padding:12px 18px;display:flex;align-items:center;gap:12px;box-shadow:0 20px 40px -22px rgba(0,0,0,.35)}
+.float i{width:40px;height:40px;border-radius:50%;background:var(--sun);display:grid;place-items:center;font-style:normal;color:#14261D}
+.float small{display:block;font-size:12px;color:var(--mut);line-height:1.5}.float strong{font-size:15px;line-height:1.5}
+.rib{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px 34px;padding:34px 0 0;font-size:20px;font-weight:800}
+.rib svg{color:var(--acc)}
+section{padding-top:84px}
+.head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px}
+.head small{font-size:14px;font-weight:700;color:var(--acc)}
+h2{margin:6px 0 10px;font-size:clamp(28px,4vw,46px);line-height:1.35;font-weight:900}
+.head p{margin:0;color:var(--mut);max-width:520px}
+.tabs{display:flex;flex-wrap:wrap;gap:10px}
+.tab{min-height:44px;padding:0 22px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);font-size:15px;font-weight:700}
+.tab[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+.p{background:var(--card);border-radius:32px;overflow:hidden;box-shadow:0 18px 40px -28px rgba(0,0,0,.4);transition:transform .25s}
+.p:hover{transform:translateY(-6px)}
+.p .pic{height:230px;display:grid;place-items:center}
+.p .pic svg{width:190px;height:170px}
+.p .b{padding:20px 24px 24px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.p h3{margin:0;font-size:18px;line-height:1.5}.p small{color:var(--mut);font-size:14px}
+.p b{display:block;font-size:17px;margin-top:2px}
+.add{width:46px;height:46px;border-radius:50%;border:0;background:var(--ink);color:var(--bg);font-size:24px;line-height:1;flex:none;transition:background .2s}
+.add:hover{background:var(--acc);color:#fff}
+.two{display:flex;flex-wrap:wrap;gap:24px}
+.box{flex:1 1 420px;border-radius:40px;padding:clamp(28px,4vw,52px)}
+.box.s{background:var(--sun);color:#14261D}.box.s p{color:#4c4210}
+.box.l{background:var(--card)}
+.box p{margin:0 0 20px;color:var(--mut);max-width:440px}
+.feat{display:grid;gap:18px;margin:0;padding:0;list-style:none}
+.feat li{display:flex;gap:16px;align-items:flex-start}
+.feat i{flex:none;width:44px;height:44px;border-radius:50%;background:var(--soft);display:grid;place-items:center;font-style:normal;font-size:20px}
+.feat b{display:block}.feat span{color:var(--mut);font-size:15px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+.st{background:var(--card);border-radius:32px;padding:30px}
+.st em{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--acc);color:#fff;font-style:normal;font-weight:900;margin-bottom:14px}
+.st h3{margin:0 0 4px;font-size:19px}.st p{margin:0;color:var(--mut);font-size:15px}
+.nl{background:var(--hero);border-radius:48px;padding:clamp(32px,5vw,64px);text-align:center}
+.nl p{margin:0 auto;color:var(--mut);max-width:480px}
+.nl form{display:flex;gap:10px;max-width:520px;margin:26px auto 0;flex-wrap:wrap;justify-content:center}
+.nl input{flex:1 1 240px;min-width:0;min-height:56px;padding:0 24px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:16px}
+.ok{margin-top:12px;min-height:28px;font-weight:700}
+footer{margin-top:72px;border-top:1px solid var(--line);padding-block:32px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;color:var(--mut);font-size:15px}
+.toast{position:fixed;bottom:calc(24px + env(safe-area-inset-bottom,0px));left:50%;transform:translate(-50%,30px);opacity:0;background:var(--ink);color:var(--bg);padding:12px 26px;border-radius:999px;font-weight:700;transition:.3s;pointer-events:none;z-index:9}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr}nav{display:none}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}.hero,.nl{border-radius:32px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="w">
+<header>
+<a class="logo" href="#top"><b><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 20L10 6l4 7 3-4 5 11z" fill="#fff"/></svg></b>اوج</a>
+<nav aria-label="منوی اصلی"><a href="#shop">فروشگاه</a><a href="#about">درباره ما</a><a href="#order">نحوه سفارش</a><a href="#contact">تماس</a></nav>
+<a class="pill" href="#shop">سبد خرید: <span id="cnt">۰</span></a>
+</header>
+
+<div class="hero" id="top">
+<div class="t">
+<span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" style="color:var(--acc)"><path d="M12 2l2.2 7.8L22 12l-7.8 2.2L12 22l-2.2-7.8L2 12l7.8-2.2z" fill="currentColor"/></svg>ارسال همان‌روز در تهران</span>
+<h1>هر روز، یک قدم <mark>بالاتر</mark> برو</h1>
+<p>کفش، تجهیزات باشگاه و لوازم طبیعت‌گردی؛ ساده، باکیفیت و اصل. فقط آنچه واقعاً به کارت می‌آید.</p>
+<div class="row"><a class="pill a" href="#shop">مشاهده فروشگاه</a><a class="pill o" href="#about">چرا اوج؟</a></div>
+<div class="trust"><span>✓ ضمانت اصالت</span><span>✓ بازگشت هفت‌روزه</span><span>✓ پشتیبانی هر روز</span></div>
+</div>
+<div class="art">
+<svg viewBox="0 0 520 520" role="img" aria-label="کفش ورزشی، دمبل و توپ">
+<circle cx="260" cy="270" r="220" fill="var(--card)" opacity=".7"/>
+<circle cx="260" cy="270" r="248" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="2" stroke-dasharray="4 12" stroke-linecap="round"/>
+<circle cx="430" cy="100" r="42" fill="#F7D774"/><circle cx="80" cy="420" r="26" fill="#F2643A"/>
+<path d="M90 96l6 17 17 6-17 6-6 17-6-17-17-6 17-6z" fill="#F7D774"/>
+<g transform="translate(110 170) scale(1.55)">
+<ellipse cx="110" cy="130" rx="100" ry="9" fill="#000" opacity=".1"/>
+<path d="M16 110c0-34 6-60 28-72l22 20 34 4c22 6 40 22 52 44l6 8c2 6-2 10-8 10H24c-6 0-8-6-8-14z" fill="#F2643A"/>
+<path d="M12 112h196c8 0 12 6 10 14-1 4-4 6-8 6H22c-8 0-12-8-10-20z" fill="#fff"/>
+<path d="M70 62l10 16M92 66l10 16M114 72l10 14" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+</g>
+<g transform="translate(330 60) rotate(14 40 40)"><rect x="0" y="22" width="14" height="36" rx="4" fill="#14261D"/><rect x="16" y="14" width="12" height="52" rx="4" fill="#14261D"/><rect x="28" y="36" width="64" height="8" fill="#9DB0A4"/><rect x="92" y="14" width="12" height="52" rx="4" fill="#14261D"/><rect x="106" y="22" width="14" height="36" rx="4" fill="#14261D"/></g>
+<g transform="translate(60 80)"><circle cx="50" cy="50" r="48" fill="#F7D774"/><path d="M50 2c-10 22-10 74 0 96M2 50c22 10 74 10 96 0" stroke="#14261D" stroke-width="3" fill="none" opacity=".7"/></g>
+</svg>
+<div class="float"><i>★</i><div><small>محبوب این هفته</small><strong>کفش دویدن ایرفلو</strong></div></div>
+</div>
+</div>
+
+<div class="rib" aria-label="دسته‌ها"><span>دویدن</span><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.2 7.8L22 12l-7.8 2.2L12 22l-2.2-7.8L2 12l7.8-2.2z" fill="currentColor"/></svg><span>باشگاه</span><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.2 7.8L22 12l-7.8 2.2L12 22l-2.2-7.8L2 12l7.8-2.2z" fill="currentColor"/></svg><span>توپ</span><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.2 7.8L22 12l-7.8 2.2L12 22l-2.2-7.8L2 12l7.8-2.2z" fill="currentColor"/></svg><span>طبیعت</span><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.2 7.8L22 12l-7.8 2.2L12 22l-2.2-7.8L2 12l7.8-2.2z" fill="currentColor"/></svg><span>یوگا</span></div>
+
+<section id="shop">
+<div class="head"><div><small>فروشگاه</small><h2>محبوب‌ترین‌های اوج</h2><p>انتخاب‌هایی که ورزشکارها بیشتر از همه خریده‌اند.</p></div>
+<div class="tabs" role="group" aria-label="فیلتر دسته" id="tabs"></div></div>
+<div class="grid" id="grid"></div>
+</section>
+
+<section id="about"><div class="two">
+<div class="box s"><small style="font-weight:700">داستان ما</small><h2>ورزش را ساده کردیم</h2><p>اوج را ساختیم تا انتخاب وسایل ورزشی دیگر گیج‌کننده نباشد. فقط محصولاتی که خودمان امتحان کرده‌ایم.</p><a class="pill" href="#order">نحوه سفارش</a></div>
+<div class="box l"><ul class="feat">
+<li><i>✅</i><div><b>اصالت تضمین‌شده</b><span>تأمین مستقیم از نمایندگی رسمی برندها</span></div></li>
+<li><i>🚚</i><div><b>ارسال سریع</b><span>سفارش تا ساعت ۱۴، همان روز در تهران</span></div></li>
+<li><i>↩️</i><div><b>بازگشت بدون دردسر</b><span>هفت روز فرصت تعویض و مرجوعی</span></div></li>
+<li><i>💬</i><div><b>مشاوره رایگان</b><span>مربی‌های ما در انتخاب کمکت می‌کنند</span></div></li>
+</ul></div>
+</div></section>
+
+<section id="order">
+<div class="head"><div><small>نحوه سفارش</small><h2>سه قدم تا درِ خانه</h2></div></div>
+<div class="steps">
+<div class="st"><em>۱</em><h3>انتخاب کن</h3><p>محصول و سایز مناسب را از فروشگاه بردار.</p></div>
+<div class="st"><em>۲</em><h3>ثبت کن</h3><p>آدرس را وارد کن و پرداخت را انجام بده.</p></div>
+<div class="st"><em>۳</em><h3>تحویل بگیر</h3><p>سفارش را همان روز یا فردا دریافت می‌کنی.</p></div>
+</div></section>
+
+<section id="contact"><div class="nl">
+<h2 style="margin-top:0">کد ۱۰٪ اولین خرید</h2>
+<p>ایمیلت را بنویس تا کد تخفیف و خبر محصولات تازه را برایت بفرستیم.</p>
+<form id="f"><input type="email" id="em" placeholder="ایمیل شما" aria-label="ایمیل" required><button class="pill a" type="submit">دریافت کد</button></form>
+<div class="ok" id="ok" role="status"></div>
+</div></section>
+
+<footer><span>© ۱۴۰۵ اوج، فروشگاه تجهیزات ورزشی</span><span>۰۹۱۹۱۱۵۰۷۰۹ · Zeynab gholami.zeynab1386@gmail.com</span></footer>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+var fa=function(n){return String(n).replace(/\d/g,function(d){return '۰۱۲۳۴۵۶۷۸۹'[d]})};
+var I={
+shoe:'<path d="M20 110c0-34 6-60 28-72l22 20 34 4c22 6 40 22 52 44l6 8c2 6-2 10-8 10H28c-6 0-8-6-8-14z" fill="#F2643A"/><path d="M16 112h196c8 0 12 6 10 14-1 4-4 6-8 6H26c-8 0-12-8-10-20z" fill="#fff"/><path d="M74 62l10 16M96 66l10 16" stroke="#fff" stroke-width="4" stroke-linecap="round"/>',
+db:'<g transform="translate(20 50)"><rect x="0" y="20" width="22" height="56" rx="6" fill="#14261D"/><rect x="24" y="8" width="18" height="80" rx="6" fill="#14261D"/><rect x="42" y="40" width="76" height="12" fill="#6B7D72"/><rect x="118" y="8" width="18" height="80" rx="6" fill="#14261D"/><rect x="138" y="20" width="22" height="56" rx="6" fill="#14261D"/></g>',
+ball:'<circle cx="110" cy="85" r="68" fill="#fff"/><path d="M110 17c-14 30-14 106 0 136M42 85c30 14 106 14 136 0" stroke="#14261D" stroke-width="4" fill="none"/><circle cx="110" cy="85" r="68" fill="none" stroke="#14261D" stroke-width="4"/>',
+bag:'<rect x="52" y="30" width="116" height="120" rx="36" fill="#6C5CE7"/><rect x="74" y="92" width="72" height="44" rx="14" fill="#fff" opacity=".85"/><path d="M84 32c0-18 52-18 52 0" stroke="#14261D" stroke-width="7" fill="none" stroke-linecap="round"/><rect x="92" y="60" width="36" height="8" rx="4" fill="#fff"/>',
+mat:'<rect x="30" y="70" width="140" height="44" rx="22" fill="#2E8B6E"/><circle cx="52" cy="92" r="22" fill="#4DB894"/><circle cx="52" cy="92" r="10" fill="#2E8B6E"/><circle cx="52" cy="92" r="4" fill="#fff"/><rect x="100" y="76" width="70" height="8" rx="4" fill="#fff" opacity=".3"/>',
+bot:'<rect x="80" y="20" width="60" height="22" rx="8" fill="#14261D"/><rect x="66" y="40" width="88" height="112" rx="28" fill="#4DA3E8"/><rect x="82" y="76" width="56" height="32" rx="10" fill="#fff" opacity=".85"/>'
+};
+var P=[['کفش دویدن ایرفلو','run','shoe','۳٬۹۸۰٬۰۰۰','#FFD9CB'],['ست دمبل ۲۰ کیلو','gym','db','۲٬۱۰۰٬۰۰۰','#D9D6F5'],['توپ فوتبال حرفه‌ای','ball','ball','۹۸۰٬۰۰۰','#F7E3A1'],['کوله طبیعت‌گردی','out','bag','۲٬۴۹۰٬۰۰۰','#DCD7F6'],['مت یوگا ضدلغزش','gym','mat','۶۹۰٬۰۰۰','#CDEBDD'],['قمقمه ورزشی','out','bot','۳۲۰٬۰۰۰','#CFE5F7']];
+var T=[['all','همه'],['run','دویدن'],['gym','باشگاه'],['ball','توپ'],['out','طبیعت']],cur='all',n=0;
+function show(){document.getElementById('grid').innerHTML=P.filter(function(p){return cur==='all'||p[1]===cur}).map(function(p){return '<article class="p"><div class="pic" style="background:'+p[4]+'"><svg viewBox="0 0 220 170" aria-hidden="true"><ellipse cx="110" cy="152" rx="70" ry="8" fill="#000" opacity=".1"/>'+I[p[2]]+'</svg></div><div class="b"><div><h3>'+p[0]+'</h3><b>'+p[3]+' <small>تومان</small></b></div><button class="add" data-n="'+p[0]+'" aria-label="افزودن '+p[0]+' به سبد">+</button></div></article>'}).join('')}
+function tabs(){document.getElementById('tabs').innerHTML=T.map(function(t){return '<button type="button" class="tab" data-k="'+t[0]+'" aria-pressed="'+(t[0]===cur)+'">'+t[1]+'</button>'}).join('')}
+tabs();show();
+document.getElementById('tabs').addEventListener('click',function(e){var b=e.target.closest('.tab');if(!b)return;cur=b.dataset.k;tabs();show()});
+var tm;document.getElementById('grid').addEventListener('click',function(e){var b=e.target.closest('.add');if(!b)return;n++;document.getElementById('cnt').textContent=fa(n);var t=document.getElementById('toast');t.textContent=b.dataset.n+' به سبد اضافه شد';t.classList.add('on');clearTimeout(tm);tm=setTimeout(function(){t.classList.remove('on')},1800)});
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();document.getElementById('ok').textContent='ثبت شد! کد تخفیف به ایمیلت ارسال می‌شود.';e.target.reset()});
+</script>
+</body>
+</html>
